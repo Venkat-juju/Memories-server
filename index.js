@@ -30,4 +30,4 @@ app.use('/posts', postRouter);
 
 app.use('/', (req, res) => {
 	res.send('Hello!');
-})
+});
