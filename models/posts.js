@@ -11,6 +11,10 @@ const postSchema = new Schema({
 		type: String,
 		required: true,
 	},
+	name: {
+		type: String,
+		required: true
+	},
 	creator: {
 		type: String,
 		required: true
@@ -21,9 +25,9 @@ const postSchema = new Schema({
 	selectedFiles: {
 		type: String
 	},
-	likeCount: {
-		type: Number,
-		default: 0
+	likes: {
+		type: [String],
+		default: []
 	},
 },{
 	timestamps: true
